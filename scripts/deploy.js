@@ -5,15 +5,13 @@ async function sleep(ms) {
 }
 
 async function main() {
-
-  // Deploy the DAO Contract
   const rwaContract = await hre.ethers.deployContract("RWA DAO", [
-    RWAContract.target,
+    rwaContract.target,
   ]);
   await rwaContract.waitForDeployment();
   console.log("RWA DAO deployed to:", rwaContract.target);
 
-  // Sleep for 30 seconds to let Etherscan catch up with the deployments
+  // Sleep for 30 seconds to let Etherscan catch up with the deployment
   await sleep(30 * 1000);
 }
 
