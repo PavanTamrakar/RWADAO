@@ -2,11 +2,14 @@
 
  DAO project specifically designed for managing Resident Welfare Associations.
 
-## How It Can Be Modified More - 
+### How It Can Be Modified More - 
+
+1. We can make it sepecific more any NFT holder by importing ERC721 contract from openzeppelin. 
+
+2. We can use token system to enter the DAO. Can use Chainlink Price Feed for fetching the price of any Token which will be used.
 
 
-
-Psuedocode I used:
+### Psuedocode I used:
 
 ```shell
 // RWA contract
@@ -58,3 +61,5 @@ contract RWA {
     function createProposal() public {}
 
 ```
+
+I used Hardhat and Alchemy for this Project, but since its a basic DAO contract I will just run it on remix.org 
